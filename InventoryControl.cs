@@ -22,7 +22,20 @@ namespace interventory
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
+        {
+            using (Form modalForm = new Form())
+            {
+                AddItemModal addItemModal = new AddItemModal();
+                modalForm.Controls.Add(addItemModal);
+                addItemModal.Dock = DockStyle.Fill;
+                modalForm.ShowDialog();
+            }
+        }
+
+        
+
+        private void danimsDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }
