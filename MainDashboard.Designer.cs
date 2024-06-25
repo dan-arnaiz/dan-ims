@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dashBoardButton = new System.Windows.Forms.Button();
+            this.salesButton = new System.Windows.Forms.Button();
+            this.customersButton = new System.Windows.Forms.Button();
+            this.inventoryButton = new System.Windows.Forms.Button();
             this.reportsButton = new System.Windows.Forms.Button();
+            this.dashBoardButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.inventoryButton = new System.Windows.Forms.Button();
-            this.customersButton = new System.Windows.Forms.Button();
-            this.salesButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,6 +59,69 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // salesButton
+            // 
+            this.salesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
+            this.salesButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
+            this.salesButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.salesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.salesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.salesButton.ForeColor = System.Drawing.Color.White;
+            this.salesButton.Location = new System.Drawing.Point(18, 241);
+            this.salesButton.Name = "salesButton";
+            this.salesButton.Size = new System.Drawing.Size(225, 31);
+            this.salesButton.TabIndex = 9;
+            this.salesButton.Text = "Sales";
+            this.salesButton.UseVisualStyleBackColor = false;
+            this.salesButton.Click += new System.EventHandler(this.salesButton_Click);
+            // 
+            // customersButton
+            // 
+            this.customersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
+            this.customersButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
+            this.customersButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.customersButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.customersButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.customersButton.ForeColor = System.Drawing.Color.White;
+            this.customersButton.Location = new System.Drawing.Point(18, 297);
+            this.customersButton.Name = "customersButton";
+            this.customersButton.Size = new System.Drawing.Size(225, 31);
+            this.customersButton.TabIndex = 7;
+            this.customersButton.Text = "Customers";
+            this.customersButton.UseVisualStyleBackColor = false;
+            this.customersButton.Click += new System.EventHandler(this.customersButton_Click);
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
+            this.inventoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
+            this.inventoryButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.inventoryButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.inventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.inventoryButton.ForeColor = System.Drawing.Color.White;
+            this.inventoryButton.Location = new System.Drawing.Point(18, 187);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(225, 31);
+            this.inventoryButton.TabIndex = 6;
+            this.inventoryButton.Text = "Inventory";
+            this.inventoryButton.UseVisualStyleBackColor = false;
+            this.inventoryButton.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // reportsButton
+            // 
+            this.reportsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
+            this.reportsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
+            this.reportsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.reportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.reportsButton.ForeColor = System.Drawing.Color.White;
+            this.reportsButton.Location = new System.Drawing.Point(18, 349);
+            this.reportsButton.Name = "reportsButton";
+            this.reportsButton.Size = new System.Drawing.Size(225, 37);
+            this.reportsButton.TabIndex = 3;
+            this.reportsButton.Text = "Reports";
+            this.reportsButton.UseVisualStyleBackColor = false;
+            this.reportsButton.Click += new System.EventHandler(this.reportsButton_Click);
+            // 
             // dashBoardButton
             // 
             this.dashBoardButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
@@ -75,20 +138,6 @@
             this.dashBoardButton.UseVisualStyleBackColor = false;
             this.dashBoardButton.Click += new System.EventHandler(this.dashBoardButtonClick_Click);
             // 
-            // reportsButton
-            // 
-            this.reportsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
-            this.reportsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
-            this.reportsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.reportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.reportsButton.ForeColor = System.Drawing.Color.White;
-            this.reportsButton.Location = new System.Drawing.Point(18, 349);
-            this.reportsButton.Name = "reportsButton";
-            this.reportsButton.Size = new System.Drawing.Size(225, 37);
-            this.reportsButton.TabIndex = 3;
-            this.reportsButton.Text = "Reports";
-            this.reportsButton.UseVisualStyleBackColor = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -100,6 +149,25 @@
             this.panel2.Size = new System.Drawing.Size(1280, 112);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(1088, 61);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(164, 31);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "User Settings";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel3
             // 
@@ -127,52 +195,6 @@
             this.button6.Text = "View all Stores";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // inventoryButton
-            // 
-            this.inventoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
-            this.inventoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
-            this.inventoryButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.inventoryButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.inventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.inventoryButton.ForeColor = System.Drawing.Color.White;
-            this.inventoryButton.Location = new System.Drawing.Point(18, 187);
-            this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Size = new System.Drawing.Size(225, 31);
-            this.inventoryButton.TabIndex = 6;
-            this.inventoryButton.Text = "Inventory";
-            this.inventoryButton.UseVisualStyleBackColor = false;
-            this.inventoryButton.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // customersButton
-            // 
-            this.customersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
-            this.customersButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
-            this.customersButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.customersButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.customersButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.customersButton.ForeColor = System.Drawing.Color.White;
-            this.customersButton.Location = new System.Drawing.Point(18, 297);
-            this.customersButton.Name = "customersButton";
-            this.customersButton.Size = new System.Drawing.Size(225, 31);
-            this.customersButton.TabIndex = 7;
-            this.customersButton.Text = "Customers";
-            this.customersButton.UseVisualStyleBackColor = false;
-            // 
-            // salesButton
-            // 
-            this.salesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
-            this.salesButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(49)))));
-            this.salesButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.salesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.salesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.salesButton.ForeColor = System.Drawing.Color.White;
-            this.salesButton.Location = new System.Drawing.Point(18, 241);
-            this.salesButton.Name = "salesButton";
-            this.salesButton.Size = new System.Drawing.Size(225, 31);
-            this.salesButton.TabIndex = 9;
-            this.salesButton.Text = "Sales";
-            this.salesButton.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(45)))));
@@ -188,25 +210,6 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Store Information";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(1088, 61);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 31);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "User Settings";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // mainPanel
             // 

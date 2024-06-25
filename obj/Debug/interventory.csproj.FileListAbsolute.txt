@@ -11,3 +11,6 @@ C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.pdb
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.DashboardControl.resources
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.InventoryControl.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.CustomerControl.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.ReportsControl.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.SalesControl.resources

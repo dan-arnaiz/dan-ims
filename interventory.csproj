@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerControl.Designer.cs">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,6 +70,18 @@
     <Compile Include="MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsControl.Designer.cs">
+      <DependentUpon>ReportsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalesControl.Designer.cs">
+      <DependentUpon>SalesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomerControl.resx">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardControl.resx">
       <DependentUpon>DashboardControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsControl.resx">
+      <DependentUpon>ReportsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesControl.resx">
+      <DependentUpon>SalesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>

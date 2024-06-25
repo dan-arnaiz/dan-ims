@@ -1,6 +1,6 @@
 ﻿namespace interventory
 {
-    partial class DashboardControl
+    partial class CustomerControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -74,21 +74,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 17);
+            this.label1.Location = new System.Drawing.Point(18, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
+            this.label1.Size = new System.Drawing.Size(151, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Customers";
             // 
-            // DashboardControl
+            // CustomerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tablePanel);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Name = "DashboardControl";
+            this.Name = "CustomerControl";
             this.Size = new System.Drawing.Size(967, 581);
+            this.Load += new System.EventHandler(this.CustomerControl_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);

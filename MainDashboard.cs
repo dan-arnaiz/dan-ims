@@ -32,9 +32,9 @@ namespace interventory
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private async void button7_Click(object sender, EventArgs e)
         {
-
+            await LoadControlAsync(new InventoryControl());
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -72,6 +72,21 @@ namespace interventory
             mainPanel.Controls.Clear(); // Clear existing controls
             control.Dock = DockStyle.Fill; // Ensure it fills the panel
             mainPanel.Controls.Add(control); // Add the new control
+        }
+
+        private async void salesButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new SalesControl());
+        }
+
+        private async void customersButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new CustomerControl());
+        }
+
+        private async void reportsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new ReportsControl());
         }
     }
 }

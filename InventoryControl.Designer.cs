@@ -32,7 +32,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tablePanel
@@ -62,10 +64,21 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(967, 71);
             this.panel4.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Inventory";
             // 
             // InventoryControl
             // 
@@ -79,6 +92,8 @@
             this.Load += new System.EventHandler(this.InventoryControl_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +104,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
     }
 }
