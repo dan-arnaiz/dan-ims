@@ -51,6 +51,8 @@
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.editButton = new System.Windows.Forms.Button();
             this.tablePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -93,13 +95,16 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(0, 13);
+            this.textBox1.Location = new System.Drawing.Point(77, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(296, 28);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.editButton);
+            this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.deleteButton);
             this.panel5.Controls.Add(this.exportButton);
             this.panel5.Controls.Add(this.importButton);
@@ -214,13 +219,14 @@
             this.deleteButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(545, 13);
+            this.deleteButton.Location = new System.Drawing.Point(449, 14);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(89, 31);
             this.deleteButton.TabIndex = 15;
             this.deleteButton.Text = "Delete";
             this.deleteButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // _dan_imsDataSet
             // 
@@ -300,6 +306,34 @@
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             this.descriptionDataGridViewTextBoxColumn.Width = 150;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Search";
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.editButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
+            this.editButton.FlatAppearance.BorderSize = 0;
+            this.editButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.editButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.editButton.ForeColor = System.Drawing.Color.Black;
+            this.editButton.Location = new System.Drawing.Point(545, 13);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(89, 31);
+            this.editButton.TabIndex = 17;
+            this.editButton.Text = "Edit";
+            this.editButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
+            // 
             // InventoryControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -333,7 +367,6 @@
         private System.Windows.Forms.Button exportButton;
         private System.Windows.Forms.Button importButton;
         private System.Windows.Forms.Button refreshListButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
@@ -346,5 +379,8 @@
         private System.Windows.Forms.BindingSource computerpartsBindingSource;
         private _dan_imsDataSet _dan_imsDataSet;
         private _dan_imsDataSetTableAdapters.computerpartsTableAdapter computerpartsTableAdapter;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button editButton;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

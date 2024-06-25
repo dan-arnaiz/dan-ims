@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 public class Database
 {
@@ -107,6 +108,36 @@ public class Database
             }
         }
     }
+
+    public async Task<bool> DeleteComputerPartAsync(int id)
+    {
+        string query = "DELETE FROM computerparts WHERE ID = @ID";
+
+        try
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
+
+                    await conn.OpenAsync();
+                    int result = await cmd.ExecuteNonQueryAsync();
+
+                    return result > 0;
+                }
+            }
+        }
+        catch (SqlException ex)
+        {
+            // Log exception or notify the user
+            return false;
+        }
+    }
+
+
+
+    
 
     // Add more methods as needed for updating, deleting, etc.
 }

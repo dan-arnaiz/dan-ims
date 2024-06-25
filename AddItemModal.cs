@@ -76,6 +76,25 @@ namespace interventory
 
         }
 
+        private async Task RefreshComputerPartsAsync(DataGridView dataGridView)
+        {
+            try
+            {
+                Database db = new Database();
+                var computerParts = await db.GetAllComputerPartsAsync();
+                dataGridView.DataSource = computerParts;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+
+
+
+
+
+
         private async void addNewItemButtonModal_Click(object sender, EventArgs e)
         {
             try
@@ -116,6 +135,7 @@ namespace interventory
                     quantityTextBox.Clear();
                     supplierTextBox.Clear();
                     descriptionTextbox.Clear();
+                    this.ParentForm.Close();
                 }
                 else
                 {

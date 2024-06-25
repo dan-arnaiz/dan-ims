@@ -177,6 +177,12 @@
       <DependentUpon>DashboardDummy.cs</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="editItemModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="editItemModal.Designer.cs">
+      <DependentUpon>editItemModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardDummy.resx">
       <DependentUpon>DashboardDummy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editItemModal.resx">
+      <DependentUpon>editItemModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryControl.resx">
       <DependentUpon>InventoryControl.cs</DependentUpon>
