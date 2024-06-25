@@ -58,6 +58,12 @@
     <Compile Include="DashboardControl.Designer.cs">
       <DependentUpon>DashboardControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardDummy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDummy.Designer.cs">
+      <DependentUpon>DashboardDummy.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardControl.resx">
       <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDummy.resx">
+      <DependentUpon>DashboardDummy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryControl.resx">
       <DependentUpon>InventoryControl.cs</DependentUpon>

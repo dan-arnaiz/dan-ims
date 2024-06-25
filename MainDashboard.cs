@@ -88,5 +88,10 @@ namespace interventory
         {
             await LoadControlAsync(new ReportsControl());
         }
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

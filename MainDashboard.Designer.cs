@@ -53,9 +53,10 @@
             this.panel1.Controls.Add(this.inventoryButton);
             this.panel1.Controls.Add(this.reportsButton);
             this.panel1.Controls.Add(this.dashBoardButton);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 800);
+            this.panel1.Size = new System.Drawing.Size(264, 712);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -175,9 +176,10 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(5, 3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1525, 44);
+            this.panel3.Size = new System.Drawing.Size(1278, 44);
             this.panel3.TabIndex = 2;
             // 
             // button6
@@ -217,6 +219,7 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(967, 581);
             this.mainPanel.TabIndex = 0;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // MainDashboard
             // 
