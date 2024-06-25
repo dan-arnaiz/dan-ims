@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,24 +47,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAjwBUAAAAAAAAA",
+              "Title": "MainDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\MainDashboard.cs*",
+              "RelativeToolTip": "MainDashboard.cs*",
+              "ViewState": "AQIAACIAAAAAAAAAAIA2wC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:22:15.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:19:11.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\MainDashboard.cs [Design]*",
+              "RelativeToolTip": "MainDashboard.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:16:49.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignInForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.Designer.cs",
+              "RelativeDocumentMoniker": "SignInForm.Designer.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.Designer.cs",
+              "RelativeToolTip": "SignInForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:09:08.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SignInForm.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.cs",
+              "RelativeDocumentMoniker": "SignInForm.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.cs",
+              "RelativeToolTip": "SignInForm.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAjwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T02:02:37.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "SignInForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.cs",
+              "RelativeDocumentMoniker": "SignInForm.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SignInForm.cs [Design]",
+              "RelativeToolTip": "SignInForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T02:00:41.531Z",
               "EditorCaption": " [Design]"

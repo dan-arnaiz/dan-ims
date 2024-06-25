@@ -1,0 +1,11 @@
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\bin\Debug\interventory.exe.config
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\bin\Debug\interventory.exe
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\bin\Debug\interventory.pdb
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.csproj.AssemblyReference.cache
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.MainDashboard.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.SignInForm.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.Properties.Resources.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.csproj.GenerateResource.cache
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.csproj.CoreCompileInputs.cache
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.exe
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.pdb
