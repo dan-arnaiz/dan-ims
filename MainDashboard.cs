@@ -46,5 +46,32 @@ namespace interventory
         {
 
         }
+
+        private async void dashBoardButtonClick_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new DashboardControl());
+        }
+
+        private Task LoadControlAsync(UserControl control)
+        {
+            return Task.Run(() =>
+            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action(() => LoadControl(control)));
+                }
+                else
+                {
+                    LoadControl(control);
+                }
+            });
+        }
+
+        private void LoadControl(UserControl control)
+        {
+            mainPanel.Controls.Clear(); // Clear existing controls
+            control.Dock = DockStyle.Fill; // Ensure it fills the panel
+            mainPanel.Controls.Add(control); // Add the new control
+        }
     }
 }
