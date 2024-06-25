@@ -215,6 +215,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StoreInformation.Designer.cs">
+      <DependentUpon>StoreInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="_dan_imsDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -259,6 +265,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StoreInformation.resx">
+      <DependentUpon>StoreInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

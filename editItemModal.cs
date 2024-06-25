@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using System;
 
 namespace interventory
 {
@@ -14,9 +7,11 @@ namespace interventory
     {
         private DataGridViewRow currentRow;
 
-        public editItemModal()
+        // Modified constructor to accept a DataGridViewRow
+        public editItemModal(DataGridViewRow selectedRow)
         {
             InitializeComponent();
+            currentRow = selectedRow; // Assign the passed row to currentRow
 
             // Initialize your text boxes with the current row values using updated column names
             nametextBox.Text = currentRow.Cells["nameDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
@@ -26,8 +21,11 @@ namespace interventory
             quantityTextBox.Text = currentRow.Cells["quantityDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
             descriptionTextbox.Text = currentRow.Cells["descriptionDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
             supplierTextBox.Text = currentRow.Cells["supplierDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-
         }
+
+        // Other methods remain unchanged
+        
+
 
         private void editItemModal_Load(object sender, EventArgs e)
         {

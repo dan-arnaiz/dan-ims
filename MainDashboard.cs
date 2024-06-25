@@ -93,5 +93,18 @@ namespace interventory
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (Form modalForm = new Form())
+            {
+                StoreInformation StoreInformation = new StoreInformation();
+                modalForm.Controls.Add(StoreInformation);
+                StoreInformation.Dock = DockStyle.Fill;
+                modalForm.Size = new Size(490, 449);
+                modalForm.StartPosition = FormStartPosition.CenterScreen;
+                modalForm.ShowDialog();
+            }
+        }
     }
 }

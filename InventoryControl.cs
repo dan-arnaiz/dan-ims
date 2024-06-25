@@ -105,43 +105,23 @@ namespace interventory
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            // Step 1 & 2: Check if a row is selected
-            
-
-            // Assuming you have a modal form named EditItemModal with textboxes for editing
-            editItemModal editModal = new editItemModal();
-
             if (dataGridView1.CurrentRow != null)
             {
+                var selectedRow = dataGridView1.CurrentRow;
                 using (Form modalForm = new Form())
                 {
-                    editItemModal editItemModal = new editItemModal();
-                    modalForm.Controls.Add(editItemModal);
-                    editItemModal.Dock = DockStyle.Fill;
+                    AddItemModal addItemModal = new AddItemModal();
+                    modalForm.Controls.Add(addItemModal);
+                    addItemModal.Dock = DockStyle.Fill;
                     modalForm.Size = new Size(490, 449);
                     modalForm.StartPosition = FormStartPosition.CenterScreen;
                     modalForm.ShowDialog();
                 }
-
-                var currentRow = dataGridView1.CurrentRow;
-                editModal.nametextBox.Text = currentRow.Cells["nameDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.categoryTextBox.Text = currentRow.Cells["categoryDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.priceTextBox.Text = currentRow.Cells["priceDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.brandTextBox.Text = currentRow.Cells["brandDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.quantityTextBox.Text = currentRow.Cells["quantityDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.descriptionTextbox.Text = currentRow.Cells["descriptionDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-                editModal.supplierTextBox.Text = currentRow.Cells["supplierDataGridViewTextBoxColumn"].Value?.ToString() ?? "";
-
-                
-
             }
             else
             {
-                MessageBox.Show("No row is currently selected.");
+                MessageBox.Show("Please select a row first.");
             }
-            // Step 4: Show the modal dialog
-            
-            
         }
     }
 }

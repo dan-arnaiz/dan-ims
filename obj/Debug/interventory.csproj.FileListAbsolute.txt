@@ -88,3 +88,4 @@ C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\bin
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interven.297DA475.Up2Date
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.AddItemModal.resources
 C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.editItemModal.resources
+C:\Users\MY PC\Desktop\Dan Code\computerscience\OOP-IMS\dan-ims\interventory\obj\Debug\interventory.StoreInformation.resources
