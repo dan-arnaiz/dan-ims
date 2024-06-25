@@ -29,6 +29,8 @@ namespace interventory
                 AddItemModal addItemModal = new AddItemModal();
                 modalForm.Controls.Add(addItemModal);
                 addItemModal.Dock = DockStyle.Fill;
+                modalForm.Size = new Size(490, 449);
+                modalForm.StartPosition = FormStartPosition.CenterScreen;
                 modalForm.ShowDialog();
             }
         }
@@ -38,6 +40,25 @@ namespace interventory
         private void danimsDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Assuming Database is the class that contains your database operations
+                Database db = new Database();
+
+                // Call the method to get all computer parts. Make sure this method exists and is implemented correctly.
+                var computerParts = db.GetAllComputerPartsAsync();
+
+                // Set the data source for dataGridView1
+                dataGridView1.DataSource = computerParts;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while refreshing the list: {ex.Message}");
+            }
         }
     }
 }

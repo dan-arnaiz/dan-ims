@@ -54,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(121, 534);
+            this.panel1.Size = new System.Drawing.Size(121, 549);
             this.panel1.TabIndex = 1;
             // 
             // addNewItemButtonModal
@@ -245,7 +245,7 @@
             this.Controls.Add(this.addNewItemButtonModal);
             this.Controls.Add(this.panel1);
             this.Name = "AddItemModal";
-            this.Size = new System.Drawing.Size(697, 534);
+            this.Size = new System.Drawing.Size(690, 549);
             this.ResumeLayout(false);
             this.PerformLayout();
 

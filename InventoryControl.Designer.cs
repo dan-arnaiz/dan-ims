@@ -37,17 +37,26 @@
             this.importButton = new System.Windows.Forms.Button();
             this.addNewItemButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.refreshListButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteButton = new System.Windows.Forms.Button();
             this._dan_imsDataSet = new interventory._dan_imsDataSet();
-            this.danimsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computerpartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computerpartsTableAdapter = new interventory._dan_imsDataSetTableAdapters.computerpartsTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tablePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dan_imsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danimsDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tablePanel
@@ -64,7 +73,16 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.danimsDataSetBindingSource;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.brandDataGridViewTextBoxColumn,
+            this.categoryDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.supplierDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.computerpartsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -150,30 +168,31 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.refreshListButton);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(967, 71);
             this.panel4.TabIndex = 5;
             // 
-            // button3
+            // refreshListButton
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(830, 21);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 31);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Refresh List";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button3.UseVisualStyleBackColor = false;
+            this.refreshListButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.refreshListButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.refreshListButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
+            this.refreshListButton.FlatAppearance.BorderSize = 0;
+            this.refreshListButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.refreshListButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.refreshListButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refreshListButton.ForeColor = System.Drawing.Color.Black;
+            this.refreshListButton.Location = new System.Drawing.Point(830, 21);
+            this.refreshListButton.Name = "refreshListButton";
+            this.refreshListButton.Size = new System.Drawing.Size(117, 31);
+            this.refreshListButton.TabIndex = 15;
+            this.refreshListButton.Text = "Refresh List";
+            this.refreshListButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.refreshListButton.UseVisualStyleBackColor = false;
+            this.refreshListButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -208,12 +227,78 @@
             this._dan_imsDataSet.DataSetName = "_dan_imsDataSet";
             this._dan_imsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // danimsDataSetBindingSource
+            // computerpartsBindingSource
             // 
-            this.danimsDataSetBindingSource.AllowNew = true;
-            this.danimsDataSetBindingSource.DataSource = this._dan_imsDataSet;
-            this.danimsDataSetBindingSource.Position = 0;
-            this.danimsDataSetBindingSource.CurrentChanged += new System.EventHandler(this.danimsDataSetBindingSource_CurrentChanged);
+            this.computerpartsBindingSource.DataMember = "computerparts";
+            this.computerpartsBindingSource.DataSource = this._dan_imsDataSet;
+            // 
+            // computerpartsTableAdapter
+            // 
+            this.computerpartsTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // brandDataGridViewTextBoxColumn
+            // 
+            this.brandDataGridViewTextBoxColumn.DataPropertyName = "brand";
+            this.brandDataGridViewTextBoxColumn.HeaderText = "brand";
+            this.brandDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.brandDataGridViewTextBoxColumn.Name = "brandDataGridViewTextBoxColumn";
+            this.brandDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
+            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // supplierDataGridViewTextBoxColumn
+            // 
+            this.supplierDataGridViewTextBoxColumn.DataPropertyName = "supplier";
+            this.supplierDataGridViewTextBoxColumn.HeaderText = "supplier";
+            this.supplierDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.supplierDataGridViewTextBoxColumn.Name = "supplierDataGridViewTextBoxColumn";
+            this.supplierDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.Width = 150;
             // 
             // InventoryControl
             // 
@@ -232,7 +317,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dan_imsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danimsDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,10 +332,19 @@
         private System.Windows.Forms.Button addNewItemButton;
         private System.Windows.Forms.Button exportButton;
         private System.Windows.Forms.Button importButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button refreshListButton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.BindingSource danimsDataSetBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn brandDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource computerpartsBindingSource;
         private _dan_imsDataSet _dan_imsDataSet;
+        private _dan_imsDataSetTableAdapters.computerpartsTableAdapter computerpartsTableAdapter;
     }
 }

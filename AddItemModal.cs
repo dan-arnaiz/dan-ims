@@ -76,10 +76,22 @@ namespace interventory
 
         }
 
-        private void addNewItemButtonModal_Click(object sender, EventArgs e)
+        private async void addNewItemButtonModal_Click(object sender, EventArgs e)
         {
             try
             {
+                // Validate numerical values before parsing
+                if (!decimal.TryParse(priceTextBox.Text, out decimal price))
+                {
+                    MessageBox.Show("Please enter a valid decimal value for price.");
+                    return;
+                }
+                if (!int.TryParse(quantityTextBox.Text, out int quantity))
+                {
+                    MessageBox.Show("Please enter a valid integer value for quantity.");
+                    return;
+                }
+
                 // Instantiate your Database class
                 Database db = new Database();
 
@@ -87,27 +99,28 @@ namespace interventory
                 string name = nametextBox.Text;
                 string brand = brandTextBox.Text;
                 string category = categoryTextBox.Text;
-                decimal price = decimal.Parse(priceTextBox.Text); // Ensure this is a valid decimal
-                int quantity = int.Parse(quantityTextBox.Text); // Ensure this is a valid integer
                 string supplier = supplierTextBox.Text;
                 string description = descriptionTextbox.Text;
 
-                // Call the AddComputerPart method
-                bool success = db.AddComputerPart(name, brand, category, price, quantity, supplier, description);
+                // Call the AddComputerPart method asynchronously
+                bool success = await db.AddComputerPartAsync(name, brand, category, price, quantity, supplier, description);
 
                 if (success)
                 {
                     MessageBox.Show("Item added successfully.");
-                    // Optionally, clear the text boxes or close the modal
+                    // Optionally, clear the text boxes
+                    nametextBox.Clear();
+                    brandTextBox.Clear();
+                    categoryTextBox.Clear();
+                    priceTextBox.Clear();
+                    quantityTextBox.Clear();
+                    supplierTextBox.Clear();
+                    descriptionTextbox.Clear();
                 }
                 else
                 {
                     MessageBox.Show("Failed to add the item.");
                 }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Please enter valid numerical values for price and quantity.");
             }
             catch (Exception ex)
             {
@@ -117,7 +130,7 @@ namespace interventory
 
         private void cancelAddButton_Click(object sender, EventArgs e)
         {
-
+            this.ParentForm.Close();
         }
     }
 }

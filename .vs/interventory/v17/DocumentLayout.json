@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,12 +27,8 @@
       "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\additemmodal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|solutionrelative:additemmodal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A7BEFD3-2B2F-4F78-99E4-094D5F6C1D83}|interventory.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-ims\\dan-ims\\interventory\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,45 +83,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddItemModal.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.Designer.cs",
-              "RelativeDocumentMoniker": "AddItemModal.Designer.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.Designer.cs",
-              "RelativeToolTip": "AddItemModal.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:25:35.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Database.cs",
-              "RelativeDocumentMoniker": "Database.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Database.cs",
-              "RelativeToolTip": "Database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:22:47.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "InventoryControl.cs",
               "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\InventoryControl.cs",
               "RelativeDocumentMoniker": "InventoryControl.cs",
               "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\InventoryControl.cs",
               "RelativeToolTip": "InventoryControl.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAuwCMAAAAIAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAuwDYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:05:13.139Z",
+              "WhenOpened": "2024-06-25T07:09:26.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "AddItemModal.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
+              "RelativeDocumentMoniker": "AddItemModal.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
+              "RelativeToolTip": "AddItemModal.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAqwIAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T06:09:34.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "InventoryControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\InventoryControl.cs",
               "RelativeDocumentMoniker": "InventoryControl.cs",
@@ -133,7 +120,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "AddItemModal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
+              "RelativeDocumentMoniker": "AddItemModal.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs [Design]",
+              "RelativeToolTip": "AddItemModal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T06:06:52.508Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAxwG8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T06:22:47.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\MainDashboard.cs",
               "RelativeDocumentMoniker": "MainDashboard.cs",
@@ -145,15 +157,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddItemModal.cs",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
-              "RelativeDocumentMoniker": "AddItemModal.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
-              "RelativeToolTip": "AddItemModal.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAA9wEgAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "AddItemModal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.Designer.cs",
+              "RelativeDocumentMoniker": "AddItemModal.Designer.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.Designer.cs",
+              "RelativeToolTip": "AddItemModal.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:09:34.642Z",
+              "WhenOpened": "2024-06-25T06:25:35.22Z",
               "EditorCaption": ""
             },
             {
@@ -171,18 +183,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddItemModal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs",
-              "RelativeDocumentMoniker": "AddItemModal.cs",
-              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\AddItemModal.cs [Design]",
-              "RelativeToolTip": "AddItemModal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:06:52.508Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "DashboardControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\DashboardControl.cs",
@@ -190,7 +190,8 @@
               "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\DashboardControl.cs [Design]",
               "RelativeToolTip": "DashboardControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:37:12.26Z"
+              "WhenOpened": "2024-06-25T03:37:12.26Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -202,7 +203,8 @@
               "RelativeToolTip": "DashboardControl.cs",
               "ViewState": "AQIAABMAAAAAAAAAAIA2wB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T04:29:50.059Z"
+              "WhenOpened": "2024-06-25T04:29:50.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -214,7 +216,8 @@
               "RelativeToolTip": "DashboardDummy.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAuwB8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T04:16:35.141Z"
+              "WhenOpened": "2024-06-25T04:16:35.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -225,7 +228,8 @@
               "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\SalesControl.cs [Design]",
               "RelativeToolTip": "SalesControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:34:12.865Z"
+              "WhenOpened": "2024-06-25T03:34:12.865Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -236,7 +240,8 @@
               "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-IMS\\dan-ims\\interventory\\ReportsControl.cs [Design]",
               "RelativeToolTip": "ReportsControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:34:50.442Z"
+              "WhenOpened": "2024-06-25T03:34:50.442Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -248,7 +253,8 @@
               "RelativeToolTip": "SalesControl.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:37:06.071Z"
+              "WhenOpened": "2024-06-25T03:37:06.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -260,7 +266,8 @@
               "RelativeToolTip": "CustomerControl.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAjwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:36:09.725Z"
+              "WhenOpened": "2024-06-25T03:36:09.725Z",
+              "EditorCaption": ""
             }
           ]
         }
