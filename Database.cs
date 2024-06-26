@@ -170,6 +170,36 @@ public class Database
         }
     }
 
+    public async Task<DataTable> SearchComputerPartsAsync(string searchText)
+    {
+        DataTable dataTable = new DataTable();
+        string query = "SELECT * FROM computerparts WHERE Name LIKE @SearchText OR Brand LIKE @SearchText";
+
+        try
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    // Use % wildcards to search for any occurrence of searchText
+                    cmd.Parameters.AddWithValue("@SearchText", $"%{searchText}%");
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions (e.g., logging)
+            Console.WriteLine(ex.Message);
+        }
+
+        return dataTable;
+    }
+
 
 
 
