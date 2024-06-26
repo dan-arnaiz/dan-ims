@@ -115,6 +115,7 @@ namespace interventory
                 Database db = new Database();
 
                 // Collect input values from text boxes
+                string id = idTextbox.Text;
                 string name = nametextBox.Text;
                 string brand = brandTextBox.Text;
                 string category = categoryTextBox.Text;
@@ -122,12 +123,13 @@ namespace interventory
                 string description = descriptionTextbox.Text;
 
                 // Call the AddComputerPart method asynchronously
-                bool success = await db.AddComputerPartAsync(name, brand, category, price, quantity, supplier, description);
+                bool success = await db.AddComputerPartAsync(id, name, brand, category, price, quantity, supplier, description);
 
                 if (success)
                 {
                     MessageBox.Show("Item added successfully.");
                     // Optionally, clear the text boxes
+                    idTextbox.Clear();
                     nametextBox.Clear();
                     brandTextBox.Clear();
                     categoryTextBox.Clear();
@@ -151,6 +153,16 @@ namespace interventory
         private void cancelAddButton_Click(object sender, EventArgs e)
         {
             this.ParentForm.Close();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idTextbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

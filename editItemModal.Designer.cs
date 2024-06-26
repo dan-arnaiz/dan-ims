@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.editNewItemButtonModal = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.idl = new System.Windows.Forms.Label();
+            this.idTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cancelAddButton
@@ -115,7 +117,7 @@
             // 
             // nametextBox
             // 
-            this.nametextBox.Location = new System.Drawing.Point(296, 103);
+            this.nametextBox.Location = new System.Drawing.Point(296, 109);
             this.nametextBox.Name = "nametextBox";
             this.nametextBox.Size = new System.Drawing.Size(357, 26);
             this.nametextBox.TabIndex = 28;
@@ -174,7 +176,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 103);
+            this.label3.Location = new System.Drawing.Point(219, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 22;
@@ -227,10 +229,29 @@
             this.panel1.TabIndex = 18;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // idl
+            // 
+            this.idl.AutoSize = true;
+            this.idl.Location = new System.Drawing.Point(244, 71);
+            this.idl.Name = "idl";
+            this.idl.Size = new System.Drawing.Size(26, 20);
+            this.idl.TabIndex = 36;
+            this.idl.Text = "ID";
+            // 
+            // idTextbox
+            // 
+            this.idTextbox.Location = new System.Drawing.Point(296, 71);
+            this.idTextbox.Name = "idTextbox";
+            this.idTextbox.Size = new System.Drawing.Size(357, 26);
+            this.idTextbox.TabIndex = 37;
+            this.idTextbox.TextChanged += new System.EventHandler(this.idTextbox_TextChanged);
+            // 
             // editItemModal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.idTextbox);
+            this.Controls.Add(this.idl);
             this.Controls.Add(this.cancelAddButton);
             this.Controls.Add(this.descriptionTextbox);
             this.Controls.Add(this.supplierTextBox);
@@ -277,5 +298,7 @@
         public System.Windows.Forms.TextBox categoryTextBox;
         public System.Windows.Forms.TextBox quantityTextBox;
         public System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.Label idl;
+        private System.Windows.Forms.TextBox idTextbox;
     }
 }

@@ -110,9 +110,9 @@ namespace interventory
                 var selectedRow = dataGridView1.CurrentRow;
                 using (Form modalForm = new Form())
                 {
-                    AddItemModal addItemModal = new AddItemModal();
-                    modalForm.Controls.Add(addItemModal);
-                    addItemModal.Dock = DockStyle.Fill;
+                    editItemModal editItemModal = new editItemModal(selectedRow);
+                    modalForm.Controls.Add(editItemModal);
+                    editItemModal.Dock = DockStyle.Fill;
                     modalForm.Size = new Size(490, 449);
                     modalForm.StartPosition = FormStartPosition.CenterScreen;
                     modalForm.ShowDialog();
@@ -122,6 +122,11 @@ namespace interventory
             {
                 MessageBox.Show("Please select a row first.");
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

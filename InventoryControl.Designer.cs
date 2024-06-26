@@ -40,9 +40,13 @@
             this.refreshListButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.editButton = new System.Windows.Forms.Button();
             this._dan_imsDataSet = new interventory._dan_imsDataSet();
             this.computerpartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.computerpartsTableAdapter = new interventory._dan_imsDataSetTableAdapters.computerpartsTableAdapter();
+            this.danimsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computerpartsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,14 +55,14 @@
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.editButton = new System.Windows.Forms.Button();
             this.tablePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dan_imsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danimsDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tablePanel
@@ -84,13 +88,14 @@
             this.quantityDataGridViewTextBoxColumn,
             this.supplierDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.computerpartsBindingSource;
+            this.dataGridView1.DataSource = this.computerpartsBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(961, 438);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox1
             // 
@@ -228,6 +233,34 @@
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Search";
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.editButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
+            this.editButton.FlatAppearance.BorderSize = 0;
+            this.editButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
+            this.editButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.editButton.ForeColor = System.Drawing.Color.Black;
+            this.editButton.Location = new System.Drawing.Point(545, 13);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(89, 31);
+            this.editButton.TabIndex = 17;
+            this.editButton.Text = "Edit";
+            this.editButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
+            // 
             // _dan_imsDataSet
             // 
             this._dan_imsDataSet.DataSetName = "_dan_imsDataSet";
@@ -241,6 +274,16 @@
             // computerpartsTableAdapter
             // 
             this.computerpartsTableAdapter.ClearBeforeFill = true;
+            // 
+            // danimsDataSetBindingSource
+            // 
+            this.danimsDataSetBindingSource.DataSource = this._dan_imsDataSet;
+            this.danimsDataSetBindingSource.Position = 0;
+            // 
+            // computerpartsBindingSource1
+            // 
+            this.computerpartsBindingSource1.DataMember = "computerparts";
+            this.computerpartsBindingSource1.DataSource = this.danimsDataSetBindingSource;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -306,34 +349,6 @@
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             this.descriptionDataGridViewTextBoxColumn.Width = 150;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Search";
-            // 
-            // editButton
-            // 
-            this.editButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.editButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.AppWorkspace;
-            this.editButton.FlatAppearance.BorderSize = 0;
-            this.editButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(90)))));
-            this.editButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.editButton.ForeColor = System.Drawing.Color.Black;
-            this.editButton.Location = new System.Drawing.Point(545, 13);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(89, 31);
-            this.editButton.TabIndex = 17;
-            this.editButton.Text = "Edit";
-            this.editButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.editButton.UseVisualStyleBackColor = false;
-            this.editButton.Click += new System.EventHandler(this.editButton_Click);
-            // 
             // InventoryControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -352,6 +367,8 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dan_imsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danimsDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerpartsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,6 +385,12 @@
         private System.Windows.Forms.Button importButton;
         private System.Windows.Forms.Button refreshListButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button editButton;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource computerpartsBindingSource;
+        private _dan_imsDataSet _dan_imsDataSet;
+        private _dan_imsDataSetTableAdapters.computerpartsTableAdapter computerpartsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn brandDataGridViewTextBoxColumn;
@@ -376,11 +399,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplierDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource computerpartsBindingSource;
-        private _dan_imsDataSet _dan_imsDataSet;
-        private _dan_imsDataSetTableAdapters.computerpartsTableAdapter computerpartsTableAdapter;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button editButton;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource computerpartsBindingSource1;
+        private System.Windows.Forms.BindingSource danimsDataSetBindingSource;
     }
 }

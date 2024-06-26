@@ -46,6 +46,8 @@
             this.supplierTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextbox = new System.Windows.Forms.TextBox();
             this.cancelAddButton = new System.Windows.Forms.Button();
+            this.idl = new System.Windows.Forms.Label();
+            this.idTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 188);
+            this.label2.Location = new System.Drawing.Point(160, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 3;
@@ -94,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(181, 103);
+            this.label3.Location = new System.Drawing.Point(181, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 4;
@@ -104,7 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(181, 149);
+            this.label4.Location = new System.Drawing.Point(181, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 5;
@@ -113,7 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(164, 261);
+            this.label5.Location = new System.Drawing.Point(164, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 6;
@@ -122,7 +124,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(188, 226);
+            this.label6.Location = new System.Drawing.Point(188, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 20);
             this.label6.TabIndex = 7;
@@ -151,7 +153,7 @@
             // 
             // nametextBox
             // 
-            this.nametextBox.Location = new System.Drawing.Point(258, 103);
+            this.nametextBox.Location = new System.Drawing.Point(258, 122);
             this.nametextBox.Name = "nametextBox";
             this.nametextBox.Size = new System.Drawing.Size(357, 26);
             this.nametextBox.TabIndex = 10;
@@ -159,7 +161,7 @@
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(258, 223);
+            this.priceTextBox.Location = new System.Drawing.Point(258, 231);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(357, 26);
             this.priceTextBox.TabIndex = 11;
@@ -167,7 +169,7 @@
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(258, 261);
+            this.quantityTextBox.Location = new System.Drawing.Point(258, 267);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(357, 26);
             this.quantityTextBox.TabIndex = 12;
@@ -175,7 +177,7 @@
             // 
             // categoryTextBox
             // 
-            this.categoryTextBox.Location = new System.Drawing.Point(258, 188);
+            this.categoryTextBox.Location = new System.Drawing.Point(258, 199);
             this.categoryTextBox.Name = "categoryTextBox";
             this.categoryTextBox.Size = new System.Drawing.Size(357, 26);
             this.categoryTextBox.TabIndex = 13;
@@ -183,7 +185,7 @@
             // 
             // brandTextBox
             // 
-            this.brandTextBox.Location = new System.Drawing.Point(258, 149);
+            this.brandTextBox.Location = new System.Drawing.Point(258, 164);
             this.brandTextBox.Name = "brandTextBox";
             this.brandTextBox.Size = new System.Drawing.Size(357, 26);
             this.brandTextBox.TabIndex = 14;
@@ -191,7 +193,7 @@
             // 
             // supplierTextBox
             // 
-            this.supplierTextBox.Location = new System.Drawing.Point(258, 304);
+            this.supplierTextBox.Location = new System.Drawing.Point(258, 310);
             this.supplierTextBox.Name = "supplierTextBox";
             this.supplierTextBox.Size = new System.Drawing.Size(357, 26);
             this.supplierTextBox.TabIndex = 15;
@@ -222,10 +224,29 @@
             this.cancelAddButton.UseVisualStyleBackColor = false;
             this.cancelAddButton.Click += new System.EventHandler(this.cancelAddButton_Click);
             // 
+            // idl
+            // 
+            this.idl.AutoSize = true;
+            this.idl.Location = new System.Drawing.Point(206, 81);
+            this.idl.Name = "idl";
+            this.idl.Size = new System.Drawing.Size(26, 20);
+            this.idl.TabIndex = 18;
+            this.idl.Text = "ID";
+            // 
+            // idTextbox
+            // 
+            this.idTextbox.Location = new System.Drawing.Point(258, 81);
+            this.idTextbox.Name = "idTextbox";
+            this.idTextbox.Size = new System.Drawing.Size(357, 26);
+            this.idTextbox.TabIndex = 19;
+            this.idTextbox.TextChanged += new System.EventHandler(this.idTextbox_TextChanged);
+            // 
             // AddItemModal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.idTextbox);
+            this.Controls.Add(this.idl);
             this.Controls.Add(this.cancelAddButton);
             this.Controls.Add(this.descriptionTextbox);
             this.Controls.Add(this.supplierTextBox);
@@ -271,5 +292,7 @@
         private System.Windows.Forms.TextBox supplierTextBox;
         private System.Windows.Forms.TextBox descriptionTextbox;
         private System.Windows.Forms.Button cancelAddButton;
+        private System.Windows.Forms.Label idl;
+        private System.Windows.Forms.TextBox idTextbox;
     }
 }
