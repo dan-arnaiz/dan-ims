@@ -63,3 +63,57 @@ private async void addNewItemButtonModal_Click(object sender, EventArgs e)
 }
 
 //*******************
+
+
+
+CREATE TABLE Barangays (
+    BarangayID INT PRIMARY KEY IDENTITY,
+    BarangayName NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Residents (
+    ResidentID INT PRIMARY KEY IDENTITY,
+    BarangayID INT,
+    Name NVARCHAR(255) NOT NULL,
+    Age INT,
+    Sex NVARCHAR(50),
+    -- Other columns as needed
+    CONSTRAINT FK_Residents_Barangays FOREIGN KEY (BarangayID) REFERENCES Barangays(BarangayID)
+);
+
+CREATE TABLE BarangayOfficials (
+    OfficialID INT PRIMARY KEY IDENTITY,
+    ResidentID INT,
+    BarangayID INT,
+    Role NVARCHAR(255) NOT NULL,
+    CONSTRAINT FK_BarangayOfficials_Residents FOREIGN KEY (ResidentID) REFERENCES Residents(ResidentID),
+    CONSTRAINT FK_BarangayOfficials_Barangays FOREIGN KEY (BarangayID) REFERENCES Barangays(BarangayID)
+);
+
+CREATE TABLE BarangayReports (
+    ReportID INT PRIMARY KEY IDENTITY,
+    BarangayID INT,
+    ReportType NVARCHAR(255) NOT NULL,
+    Status NVARCHAR(100),
+    -- Other columns as needed
+    CONSTRAINT FK_BarangayReports_Barangays FOREIGN KEY (BarangayID) REFERENCES Barangays(BarangayID)
+);
+
+CREATE TABLE BarangayEvents (
+    EventID INT PRIMARY KEY IDENTITY,
+    BarangayID INT,
+    Location NVARCHAR(255) NOT NULL,
+    EventDate DATETIME,
+    Description NVARCHAR(MAX),
+    CONSTRAINT FK_BarangayEvents_Barangays FOREIGN KEY (BarangayID) REFERENCES Barangays(BarangayID)
+);
+
+CREATE TABLE SystemUsers (
+    UserID INT PRIMARY KEY IDENTITY,
+    Username NVARCHAR(255) NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL,
+    -- Include a BarangayID if you want to associate users with specific barangays
+    -- BarangayID INT,
+    -- CONSTRAINT FK_SystemUsers_Barangays FOREIGN KEY (BarangayID) REFERENCES Barangays(BarangayID),
+    IsAdmin BIT
+);
